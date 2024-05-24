@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-body { 
+body {
     font-family: 'Nunito Sans', sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.5;
@@ -15,7 +15,8 @@ body {
 }
 
 .teksti {
-     margin: 100px; text-align: center
+    margin: 100px;
+    text-align: center;
 }
 
 a {
@@ -35,123 +36,70 @@ form {
 
 button, input[type=submit], input[type=button] {
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 2px;
-    text-decoration: none;
-    text-align: center;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], select {
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 2px;
     outline: none;
 }
 
-select {
-    border: none;
-    border-radius: 0px;
-    padding: 2px;
-}
-
-#salasana {
+#salasana, #voteText, #vaihtoEhto1, #vaihtoEhto2 {
     padding: 6px;
-    outline: 2px black;
 }
 
+#vaihtoEhto1, #vaihtoEhto2 {
+    margin: 4px;
+}
+
+#kirjauduUlos, #addVoteBtn, #removeVoteBtn, #yp {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    padding: 4px;
+    font-size: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
 
 #kirjauduUlos {
-    margin: 10px;
-    border: 1px solid white;
-    background-color:#bd3535;
-    cursor: pointer;
-    border-radius: 0px;
-    padding: 4px 4px;
-    font-size: 100%;  
-    text-decoration: none;
-    text-align: center;
+    background-color: #bd3535;
     color: rgb(255, 255, 255);
-    transition-duration: 0.2s;
 }
 
 #kirjauduUlos:hover {
-    border: 1px solid rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
     background-color: red;
-   
 }
 
-#voteText {
-    padding: 6px;
-}
-
-#vaihtoEhto1 {
-    padding: 6px;
-    margin: 4px;
-}
-
-#vaihtoEhto2 {
-    padding: 6px;
-    margin: 4px;
-}
-
-#addVoteBtn {
-    border: 1px solid rgb(0, 0, 0);
-    background-color:rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 0px;
-    padding: 4px 4px;
-    font-size: 100%;  
-    text-decoration: none;
-    text-align: center;
+#addVoteBtn, #removeVoteBtn {
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    transition-duration: 0.2s;
 }
 
-#addVoteBtn:hover {
-    border: 1px solid rgb(255, 255, 255);
-    background-color:rgb(255, 255, 255);
-    color:#111;
-}
-
-#removeVoteBtn {
-    border: 1px solid rgb(0, 0, 0);
-    background-color:rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 0px;
-    padding: 4px 4px;
-    font-size: 100%;  
-    text-decoration: none;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    transition-duration: 0.2s;
-}
-
-#removeVoteBtn:hover {
-    border: 1px solid rgb(255, 255, 255);
-    background-color:rgb(255, 255, 255);
-    color:#111;
+#addVoteBtn:hover, #removeVoteBtn:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: #111;
 }
 
 #yp {
-    
-    border: 1px solid rgb(255, 255, 255);
-    background-color:#000000;
-    cursor: pointer;
-    border-radius: 0px;
-    padding: 4px 4px;
-    font-size: 100%;  
-    text-decoration: none;
-    text-align: center;
+    background-color: #000000;
     color: rgb(255, 255, 255);
-    transition-duration: 0.2s;
 }
 
 #yp:hover {
-    border: 1px solid black;
-    background-color:white;
-    color:#111;
+    border-color: black;
+    background-color: white;
+    color: #111;
 }
 
 .container {
@@ -188,8 +136,6 @@ select {
     height: 60px;
     font-size: 30px;
 }
-
-
 
 @media (max-width: 1220px) {
     .grid {
